@@ -14,7 +14,8 @@ TextField txtSymptoms,txtIllness;
 txtSymptoms = new TextField (20);
 txtIllness = new TextField (20);
 
-Checkbox chkFever,chkHeadache,chkBodypains,chkWeakness,chkApetiteloss;
+Checkbox chkCold,chkFever,chkHeadache,chkBodypains,chkWeakness,chkApetiteloss;
+chkCold = new Checkbox("Cold",null,false);
 chkFever = new Checkbox("Fever",null,false);
 chkHeadache = new Checkbox("Headache",null,false);
 chkBodypains = new Checkbox("Bodypains",null,false);
@@ -30,6 +31,7 @@ add(lblSymptoms);
 add(txtSymptoms);
 add(lblIllness);
 add(txtIllness);
+add(chkCold);
 add(chkFever);
 add(chkHeadache);
 add(chkBodypains);
@@ -44,6 +46,18 @@ show();
 public void actionPerformed(ActionEvent event) {
 if(event.getActionCommand().equals("Close"))
 System.exit(0);
+
+if(chkCold.getState()==true &&
+chkFever.getState()==false &&
+chkHeadache.getState()==true &&
+chkBodypains.getState()==false &&
+chkWeakness.getState()==false &&
+chkApetiteloss.getState()==true)
+
+lblSymptoms.setText("Most likely you are infected with the Malaria Parasite);
+
+
+
 }
 
 public static void main(String[] args){
