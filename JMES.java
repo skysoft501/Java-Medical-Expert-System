@@ -13,6 +13,14 @@ lblIllness = new Label ("Illness");
 TextField txtSymptoms,txtIllness;
 txtSymptoms = new TextField (20);
 txtIllness = new TextField (20);
+
+Checkbox chkFever,chkHeadache,chkBodypains,chkWeakness,chkApetiteloss;
+chkFever = new Checkbox("Fever",null,false);
+chkHeadache = new Checkbox("Headache",null,false);
+chkBodypains = new Checkbox("Bodypains",null,false);
+chkWeakness = new Checkbox("Weakness",null,false);
+chkApetiteloss = new Checkbox("Apetiteloss",null,false);
+
 Button btnClose,btnOk;
 btnClose = new Button ("Close");
 btnOk = new Button ("Ok");
@@ -22,6 +30,12 @@ add(lblSymptoms);
 add(txtSymptoms);
 add(lblIllness);
 add(txtIllness);
+add(chkFever);
+add(chkHeadache);
+add(chkBodypains);
+add(chkWeakness);
+add(chkApetiteloss);
+
 add(btnClose);
 add(btnOk);
 show();
