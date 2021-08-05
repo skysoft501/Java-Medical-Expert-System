@@ -54,7 +54,7 @@ chkBodypains.getState()==false &&
 chkWeakness.getState()==false &&
 chkApetiteloss.getState()==true)
 
-lblSymptoms.setText("Most likely you are infected with the Malaria Parasite);
+lblSymptoms.setText("Most likely you are infected with the Malaria Parasite");
 
 elseif (chkCold.getState()==false &&
 chkFever.getState()==true &&
@@ -63,7 +63,7 @@ chkBodypains.getState()==false &&
 chkWeakness.getState()==true &&
 chkApetiteloss.getState()==true) 
 
-lblSymptoms.setText("Most likely you are infected with Typhoid);
+lblSymptoms.setText("Most likely you are infected with Typhoid");
 
 elseif (chkCold.getState()==false &&
 chkFever.getState()==true &&
@@ -78,9 +78,6 @@ else
 
 
 lblSymptoms.setText("Cause Undetected");
-
-
-
 
 }
 
